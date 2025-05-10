@@ -28,9 +28,33 @@
                 </li>
             </ul>
         </nav>
-
-
     </header>
+    <section class="contact_us">
+            <h1>Make an offer</h1>
+            <form method="post">
+                <label for="name">FULL NAME</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">EMAIL</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="phone">TELEFONE</label><br>
+                <input type="tel" id="phone" name="phone" required><br><br>
+                <label for="message">MENSAGEM</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br><br>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init('CE7O3eEe9VG24eQB4'); // Inicialize o EmailJS com sua Public Key
+            })();
+        </script>
+        <script src="E-mail_Contact_us.js"></script>
+        <footer>
+        <p>Nome da Empresa | CEP: XXXX | Cidade: XXXX | Endereço: XXXX | CNPJ: XXXXX <br>
+            <img src="images/XXXX" alt="Logo da Empresa"><br>
+            &copy; 2025 Your Company Name. All rights reserved.
+        </p>
+    </footer>
 </body>
-
-</html>l
+</html>

@@ -71,6 +71,17 @@ header {
     /* Adiciona uma sombra sutil para destaque */
 }
 
+header.scrolled {
+  background-color: transparent; /* Define o fundo transparente por padrão */
+  /* Outros estilos do seu header */
+  position: fixed; /* Para que o header permaneça no topo durante a rolagem */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100; /* Garante que o header fique acima de outros elementos */
+  /* Adicione qualquer outra estilização que você já tenha para o header */
+}
+
 
 /* Estilos para a seção da logo */
 .logo a {
