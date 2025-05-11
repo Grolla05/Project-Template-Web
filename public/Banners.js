@@ -1,5 +1,4 @@
 // Banners.js
-
 const banner = document.querySelector('.banner');
 const slidesContainer = banner.querySelector('.slides');
 const slides = slidesContainer.querySelectorAll('.slide');

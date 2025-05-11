@@ -1,60 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>NOME_DO_PRODUTO</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="website icon" href="images/png-1.svg" type="image/svg">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="website icon" href="images/png-1.svg" type="image/svg" />
+  </head>
+  <body>
     <header class="scrolled">
-        <section class="logo">
-            <a href="Home.html"><img src="images/png-1.svg" alt="Logo da Empresa" class="company_image"></a>
-        </section>
-        <nav>
-            <ul class="topics">
-                <li><a href="Home.html">HOME</a></li>
-                <li><a href="About_us.html">EMPRESA</a></li>
-                <li><a href="Estoque.html">ESTOQUE</a></li>
-                <li><a href="#mapa">LOCALIZAÇÃO</a></li>
-                <li><a href="Contate-nos.html">CONTATE-NOS</a></li>
-                <li>
-                    <form action="Estoque.html" method="get" style="display: inline;">
-                        <input type="text" name="search" placeholder="Pesquisar no estoque">
-                        <button class="search_icon" type="submit">🔍</button>
-                    </form>
-                </li>
-            </ul>
-        </nav>
+      <section class="logo">
+        <a href="Home.html"
+          ><img
+            src="images/png-1.svg"
+            alt="Logo da Empresa"
+            class="company_image"
+        /></a>
+      </section>
+      <nav>
+        <ul class="topics" id="navigation-links">
+          <li><a href="Home.html">HOME</a></li>
+          <li><a href="About_us.html">EMPRESA</a></li>
+          <li><a href="Estoque.html">ESTOQUE</a></li>
+          <li><a href="#mapa">LOCALIZAÇÃO</a></li>
+          <li><a href="Contate-nos.html">CONTATE-NOS</a></li>
+          <li>
+            <form action="Estoque.html" method="get" style="display: inline">
+              <input
+                type="text"
+                name="search"
+                placeholder="Pesquisar no estoque"
+              />
+              <button class="search_icon" type="submit">🔍</button>
+            </form>
+          </li>
+        </ul>
+        <div class="menu-btn" id="menu-toggle">
+          ☰
+          <i class="fa-solid fa-bars"></i>
+        </div>
+        <script src="Menu_bar.js"></script>
+      </nav>
     </header>
     <section class="contact_us">
-            <h1>Make an offer</h1>
-            <form method="post">
-                <label for="name">FULL NAME</label><br>
-                <input type="text" id="name" name="name" required><br><br>
-                <label for="email">EMAIL</label><br>
-                <input type="email" id="email" name="email" required><br><br>
-                <label for="phone">TELEFONE</label><br>
-                <input type="tel" id="phone" name="phone" required><br><br>
-                <label for="message">MENSAGEM</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br><br>
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-        <script type="text/javascript">
-            (function () {
-                emailjs.init('CE7O3eEe9VG24eQB4'); // Inicialize o EmailJS com sua Public Key
-            })();
-        </script>
-        <script src="E-mail_Contact_us.js"></script>
-        <footer>
-        <p>Nome da Empresa | CEP: XXXX | Cidade: XXXX | Endereço: XXXX | CNPJ: XXXXX <br>
-            <img src="images/XXXX" alt="Logo da Empresa"><br>
-            &copy; 2025 Your Company Name. All rights reserved.
-        </p>
+      <h1>Make an offer</h1>
+      <form method="post">
+        <label for="name">FULL NAME</label><br />
+        <input type="text" id="name" name="name" required /><br /><br />
+        <label for="email">EMAIL</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+        <label for="phone">TELEFONE</label><br />
+        <input type="tel" id="phone" name="phone" required /><br /><br />
+        <label for="message">MENSAGEM</label><br />
+        <textarea id="message" name="message" rows="4" required></textarea
+        ><br /><br />
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("CE7O3eEe9VG24eQB4"); // Inicialize o EmailJS com sua Public Key
+      })();
+    </script>
+    <script src="E-mail_Contact_us.js"></script>
+    <footer>
+      <p>
+        Nome da Empresa | CEP: XXXX | Cidade: XXXX | Endereço: XXXX | CNPJ:
+        XXXXX <br />
+        <img src="images/XXXX" alt="Logo da Empresa" /><br />
+        &copy; 2025 Your Company Name. All rights reserved.
+      </p>
     </footer>
-</body>
+  </body>
 </html>
