@@ -14,52 +14,46 @@ destaqueCards.forEach(card => {
 // Simulação de dados vindo do banco de dados
 const carrosData = [
     {
-        nome: "NOME DO CARRO 1",
-        anoKm: "ANO DO CARRO - KM",
-        valor: "Valor do carro",
+        nome: "PRODUCT 1",
+        espec: "ANY ESPECIFIC",
+        valor: "Value of product",
         imagem: "images/png-1.svg",
         link: "Produto.html",
-        blindado: false
     },
     {
-        nome: "NOME DO CARRO 2",
-        anoKm: "ANO DO CARRO - KM",
-        valor: "Valor do carro",
+        nome: "PRODUCT 2",
+        espec: "ANY ESPECIFIC",
+        valor: "Value of product",
         imagem: "images/png-1.svg",
         link: "Produto.html",
-        blindado: false
     },
     {
-        nome: "NOME DO CARRO 3",
-        anoKm: "ANO DO CARRO - KM",
-        valor: "Valor do carro",
+        nome: "PRODUCT 3",
+        espec: "ANY ESPECIFIC",
+        valor: "Value of product",
         imagem: "images/png-1.svg",
         link: "Produto.html",
-        blindado: false
     },
     {
-        nome: "NOME DO CARRO 4",
-        anoKm: "ANO DO CARRO - KM",
-        valor: "Valor do carro",
+        nome: "PRODUCT 4",
+        espec: "ANY ESPECIFIC",
+        valor: "Value of product",
         imagem: "images/png-1.svg",
         link: "Produto.html",
-        blindado: false
     },
     {
-        nome: "NOME DO CARRO 5",
-        anoKm: "ANO DO CARRO - KM",
-        valor: "Valor do carro",
+        nome: "PRODUCT 5",
+        espec: "ANY ESPECIFIC",
+        valor: "Value of product",
         imagem: "images/png-1.svg",
         link: "Produto.html",
-        blindado: false
     },
     {
-        nome: "NOME DO CARRO 6",
-        anoKm: "ANO DO CARRO - KM",
-        valor: "Valor do carro",
+        nome: "PRODUCT 6",
+        espec: "ANY ESPECIFIC",
+        valor: "Value of product",
         imagem: "images/png-1.svg",
         link: "Produto.html",
-        blindado: true
     }
 ];
 
@@ -70,14 +64,6 @@ carrosData.forEach(carro => {
     card.classList.add('destaque-card');
     card.dataset.link = carro.link;
     card.style.cursor = 'pointer';
-
-    if (carro.blindado) {
-        const blindadoTag = document.createElement('div');
-        blindadoTag.classList.add('blinado-tag');
-        blindadoTag.textContent = 'BLINDADO';
-        card.appendChild(blindadoTag);
-        card.classList.add('blinado'); // Adiciona classe para estilos específicos
-    }
 
     const imagem = document.createElement('img');
     imagem.src = carro.imagem;
@@ -91,12 +77,12 @@ carrosData.forEach(carro => {
     nomeH3.textContent = carro.nome;
     info.appendChild(nomeH3);
 
-    const anoKmP = document.createElement('p');
-    anoKmP.textContent = carro.anoKm;
-    info.appendChild(anoKmP);
+    const espec = document.createElement('p');
+    espec.textContent = carro.anoKm;
+    info.appendChild(espec);
 
     const valorP = document.createElement('p');
-    valorP.textContent = `R$ ${carro.valor}`;
+    valorP.textContent = `U$ ${carro.valor}`;
     info.appendChild(valorP);
 
     card.appendChild(info);
@@ -105,7 +91,7 @@ carrosData.forEach(carro => {
     card.addEventListener('click', function () {
         const link = this.dataset.link;
         if (link) {
-            window.location.href = link;
+            window.location.href = link; // Redireciona para o link da pagina do carro
         }
     });
 });
