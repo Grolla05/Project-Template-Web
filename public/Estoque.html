@@ -55,25 +55,64 @@
       </div>
       <script src="Banners.js"></script>
       <section class="contact_us">
-        <h1>Faça uma proposta</h1>
-        <p>
-          faça seu pedido/proposta do produto desejado preenchendo os seguintes
-          dados <br />
-          a partir disto entraremos em contato
-        </p>
-        <form action="submit_form.php" method="post">
-          <label for="name">Nome:</label><br />
-          <input type="text" id="name" name="name" required /><br /><br />
-          <label for="email">Email:</label><br />
-          <input type="email" id="email" name="email" required /><br /><br />
-          <label for="phone">Telefone:</label><br />
-          <input type="tel" id="phone" name="phone" required /><br /><br />
-          <label for="message">Mensagem:</label><br />
-          <textarea id="message" name="message" rows="4" required></textarea
-          ><br /><br />
+        <h1>Make an offer</h1>
+        <form method="post">
+          <div class="input-group">
+            <input
+              class="input"
+              autocomplete="name"
+              type="text"
+              id="name"
+              name="name"
+              required
+            />
+            <label class="label" for="name">NAME</label>
+          </div>
+          <div class="input-group">
+            <input
+              class="input"
+              autocomplete="email"
+              type="email"
+              id="email"
+              name="email"
+              required
+            />
+            <label class="label" cfor="email">EMAIL</label>
+          </div>
+          <div class="input-group">
+            <input
+              class="input"
+              autocomplete="tel"
+              type="tel"
+              id="phone"
+              name="phone"
+              required
+            />
+            <label class="label" for="phone">TELEFONE</label>
+          </div>
+          <div class="input-group">
+            <textarea
+              class="input"
+              id="message"
+              name="message"
+              rows="4"
+              required
+            ></textarea>
+            <label class="label" for="message">MENSAGEM</label>
+          </div>
           <button type="submit">Enviar</button>
         </form>
       </section>
+      <script
+        type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+      ></script>
+      <script type="text/javascript">
+        (function () {
+          emailjs.init("CE7O3eEe9VG24eQB4"); // Inicialize o EmailJS com sua Public Key
+        })();
+      </script>
+      <script src="E-mail_proposta.js"></script>
       <div class="container-mapa" id="mapa">
         <div class="info-lado-esquerdo">
           <div class="logo-inicial">INSERIR LOGO DA EMPRESA</div>
@@ -136,6 +175,15 @@
           ></iframe>
         </div>
       </div>
+      <a
+        href="https://wa.me/NUMERO_DA_EMPRESA"
+        class="whatsapp-float"
+        target="_blank"
+      >
+        <i class="whatsapp-icon"></i
+        ><img src="images/Whatsapp.png" alt="WhatsApp" />
+      </a>
+      <script src="Whatsapp.js"></script>
       <a
         href="https://wa.me/NUMERO_DA_EMPRESA"
         class="whatsapp-float"
