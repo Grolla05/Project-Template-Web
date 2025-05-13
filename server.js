@@ -2,7 +2,7 @@ const http = require('http');
 const fs = require('fs').promises;
 const path = require('path');
 
-const hostname = '0.0.0.0';
+const hostname = 'localhost';
 const port = 3000;
 const publicDirectory = path.join(__dirname, 'public');
 
