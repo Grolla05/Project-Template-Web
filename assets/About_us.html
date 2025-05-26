@@ -3,18 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>About Us</title>
+    <link rel="stylesheet" href="global.css" />
     <link rel="website icon" href="images/png-1.svg" type="image/svg" />
   </head>
-
   <body>
     <header class="scrolled">
       <section class="logo">
         <a href="Home.html"
           ><img
             src="images/png-1.svg"
-            alt="Company Logo"
+            alt="[Your Company Name] Logo"
             class="company_image"
         /></a>
       </section>
@@ -30,7 +29,7 @@
               <input
                 type="text"
                 name="search"
-                placeholder="Search in stock"
+                placeholder="Search Products"
               />
               <button class="search_icon" type="submit">🔍</button>
             </form>
@@ -48,72 +47,50 @@
         <div class="slides">
           <img
             src="images/Banner_home_2.png"
-            alt="Banner_about_us"
+            alt="About Us Banner"
             class="banner_image"
           />
         </div>
       </div>
       <script src="Banners.js"></script>
-      <section class="contact_us">
-        <h1>CONTACT US</h1>
-        <p>INSERT YOUR TEXT HERE:</p>
-        <form method="post">
-          <div class="input-group">
-            <input
-              class="input"
-              autocomplete="name"
-              type="text"
-              id="name"
-              name="name"
-              required
-            />
-            <label class="label" for="name">NAME</label>
-          </div>
-          <div class="input-group">
-            <input
-              class="input"
-              autocomplete="email"
-              type="email"
-              id="email"
-              name="email"
-              required
-            />
-            <label class="label" cfor="email">EMAIL</label>
-          </div>
-          <div class="input-group">
-            <input
-              class="input"
-              autocomplete="tel"
-              type="tel"
-              id="phone"
-              name="phone"
-              required
-            />
-            <label class="label" for="phone">PHONE</label>
-          </div>
-          <div class="input-group">
-            <textarea
-              class="input"
-              id="message"
-              name="message"
-              rows="4"
-              required
-            ></textarea>
-            <label class="label" for="message">MESSAGE</label>
-          </div>
-          <button type="submit">Send</button>
-        </form>
+      <section class="about_us">
+        <h1>About Us</h1>
+        <img
+          src="images/company_image.jpg"
+          alt="Company Image"
+          class="image_main1"
+        />
+        <p>
+          [Your Company Name] was founded in [Year] with the mission to [State
+          your company's mission]. We are dedicated to providing high-quality
+          [products/services] to our customers. Our core values include
+          [List your company's values].
+        </p>
+        <p>
+          Our team is comprised of experienced professionals who are passionate
+          about [what your company does]. We foster a culture of innovation,
+          collaboration, and customer satisfaction.
+        </p>
+        <p>
+          We are located at [Your Company Address]. You can reach us by phone at
+          [Your Company Phone Number] or by email at
+          [Your Company Email Address].
+        </p>
+        <img
+          src="images/team_image.jpg"
+          alt="Team Image"
+          class="image_main2"
+        />
+        <p>
+          We are proud to have received the [Award Name] for [Achievement]. This
+          recognition reflects our commitment to excellence and our dedication
+          to serving our customers.
+        </p>
+        <p>
+          We invite you to explore our website to learn more about our products,
+          services, and our company. Thank you for visiting!
+        </p>
       </section>
-      <script
-        type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
-      ></script>
-      <script type="text/javascript">
-        (function () {
-          emailjs.init("CE7O3eEe9VG24eQB4"); // Inicialize o EmailJS com sua Public Key
-        })();
-      </script>
-      <script src="E-mail_Contact_us.js"></script>
 
       <div class="container-mapa" id="mapa">
         <div class="info-lado-esquerdo">
@@ -177,8 +154,9 @@
           ></iframe>
         </div>
       </div>
+      </div>
       <a
-        href="https://wa.me/NUMERO_DA_EMPRESA"
+        href="https://wa.me/[Your Company WhatsApp Number]"
         class="whatsapp-float"
         target="_blank"
       >
@@ -189,10 +167,10 @@
     </main>
     <footer>
       <p>
-        Company Name | ZIP: XXXX | City: XXXX | Address: XXXX | CNPJ:
-        XXXXX <br />
-        <img src="images/XXXX" alt="Company Logo" /><br />
-        &copy; 2025 Your Company Name. All rights reserved.
+        [Your Company Name] | [Zip Code]: XXXX | City: XXXX | Address: XXXX |
+        CNPJ: XXXXX <br />
+        <img src="images/[Your Company Logo]" alt="[Your Company Logo]" /><br />
+        &copy; 2025 [Your Company Name]. All rights reserved.
       </p>
     </footer>
   </body>
